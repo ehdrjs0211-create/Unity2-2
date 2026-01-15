@@ -8,6 +8,8 @@ public class Chillick : MonoBehaviour
    
     void Update()
     {
+        if (GameManager.Instance.State == false) return;
+
         float time = Mathf.PingPong(Time.time * speed, 1.0f);
 
         transform.localScale = minScale + (maxScale - minScale) * time;
