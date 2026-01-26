@@ -4,11 +4,11 @@ using UnityEngine;
 public class CreateManager : MonoBehaviour
 {
     [SerializeField] float radius;
-    [SerializeField] GameObject Minotaur;
+    [SerializeField] float duration;
     [SerializeField] WaitForSeconds waitForSeconds;
     private void Awake()
     {
-        waitForSeconds = new WaitForSeconds(0.5f);
+        waitForSeconds = new WaitForSeconds(duration);
     }
     void Start()
     {
@@ -19,7 +19,7 @@ public class CreateManager : MonoBehaviour
     {
         while(true)
         {
-            GameObject clone = Instantiate(Minotaur);
+            GameObject clone = ObjectPool.Instance.GetObject();
 
             Vector2 direction = Random.insideUnitCircle.normalized * radius;
 

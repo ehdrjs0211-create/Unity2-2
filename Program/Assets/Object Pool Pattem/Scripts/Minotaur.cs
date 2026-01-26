@@ -5,9 +5,10 @@ public class Minotaur : MonoBehaviour
     [SerializeField] float speed;
     [SerializeField] Vector3 direction;
     [SerializeField] Transform portalTransform;
-    void Start()
+    private void OnEnable()
     {
         portalTransform = GameObject.Find("Portal").transform;
+
         transform.LookAt(portalTransform);
 
         direction = (portalTransform.position - transform.position).normalized;
@@ -23,7 +24,7 @@ public class Minotaur : MonoBehaviour
     {
         if(other.CompareTag("Portal"))
         {
-            Destroy(gameObject);
+            ObjectPool.Instance.Return(gameObject);
         }
     }
 }
