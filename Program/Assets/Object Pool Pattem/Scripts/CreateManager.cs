@@ -25,6 +25,8 @@ public class CreateManager : MonoBehaviour
 
             clone.transform.position = new Vector3(direction.x, 0, direction.y);
 
+            clone.SetActive(true);
+
             yield return waitForSeconds;
         }
     }
