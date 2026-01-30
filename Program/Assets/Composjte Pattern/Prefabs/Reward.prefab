@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4166018693911546416}
   - component: {fileID: 9104613963103277278}
   - component: {fileID: 8764383754024287530}
+  - component: {fileID: -587387011983825983}
   m_Layer: 5
   m_Name: Reward
   m_TagString: Untagged
@@ -89,3 +90,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates: []
+--- !u!114 &-587387011983825983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6291806567660845422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7161cbbecf04714b9d5174f2f41be04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  random: 0
+  dataList:
+  - name: Emerale
+    sprite: {fileID: 21300000, guid: ad61927f6fb6e41dbb2af14f8f8f4109, type: 3}
+  - name: Gold
+    sprite: {fileID: 21300000, guid: 3c8f00c7cc7104e279600ab7aa1a52e9, type: 3}
+  - name: Potion
+    sprite: {fileID: 21300000, guid: b7e6f9ce747b04e1b9db526471629555, type: 3}
+  - name: shiele
+    sprite: {fileID: 21300000, guid: 9ba174268c6e14c4980de3d3046fed80, type: 3}
+  image: {fileID: 0}
